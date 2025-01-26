@@ -39,8 +39,8 @@ button {
     display: flex;
     flex-direction: row;
     justify-content:space-around;
-    margin: 10px -25px ;
-}
+    margin: 10px;
+} 
 
 #left {
     display: flex;
@@ -50,7 +50,6 @@ button {
 #right {
     display: flex;
     justify-content: flex-end;
-    margin-left: 115px;
 }
 
 #up {
