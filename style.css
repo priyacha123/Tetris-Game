@@ -50,6 +50,7 @@ button {
 #right {
     display: flex;
     justify-content: flex-end;
+    margin: 0;
 }
 
 #up {
