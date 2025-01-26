@@ -19,22 +19,22 @@ body {
 }
 
 button {
-   
-    padding: 10px 20px;
+    display: none;
+    /* padding: 10px 20px;
     background-color: rgb(99, 103, 106);
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 15px;
+    font-size: 15px; */
 }
 
-.button {
+/* .button {
     display: flex;
     flex-direction: column;
     width: 25%;
-}
-
+} */
+/* 
 #left-right {
     display: flex;
     flex-direction: row;
@@ -58,24 +58,57 @@ button {
     justify-content: center;
     margin-top: 5px;
 }
-#down {
+#down { 
     display: flex;
     justify-content: center;
-}
+} */
 
 /* =================responsive======================= */
 
-@media  screen and (max-width: 700px) {
-
-    .button{
-        width: 70vw;
+@media  screen and (max-width: 600px) {
+    button {
+        display: none;
+        padding: 10px 20px;
+        background-color: rgb(99, 103, 106);
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 15px;
     }
-
-
-    #left-right{
-        display: grid;
-        grid-template-columns: repeat(2 , max-content);
-        gap: 10px;
+    
+     .button {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+    } 
+    
+    #left-right {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        margin: 2vw 0;
     }
+    
+    #left {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    #right {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+    }
+    
+    #up {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+    }
+    #down { 
+        display: flex;
+        justify-content: center;
+    } 
 
 } 
